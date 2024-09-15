@@ -1,0 +1,195 @@
+/* Wallpoet */
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+/* Kaushan Script */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Wallpoet&display=swap');
+/* Wendy One */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Wallpoet&family=Wendy+One&display=swap');
+/* Gluten */
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Kaushan+Script&family=Wallpoet&family=Wendy+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   background-color: rgb(0, 0, 0);
+}
+
+.backvideo {
+   position: absolute;
+   max-width: 100%;
+   max-height: 100%;
+   height: 100%;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: -1;
+   object-fit: cover;
+   opacity: 0.8;
+}
+
+.mypp {
+    width: 10rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 4.5rem;
+    box-shadow: 2px 5px 8px rgb(0, 0, 0);
+}
+
+.name {
+    font-family: 'Kaushan Script', sans-serif;
+    top: 15rem;
+    position: relative;
+    color: white;
+    text-shadow: 3px 5px 2px black;
+}
+
+.bio {
+    top: 15.5rem;
+    position: relative;
+    color: white;
+    font-family: 'Wendy One', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 3px 5px 2px black;
+}
+
+ul {
+    width: 80%;
+    max-width: 40rem;
+    position: relative;
+    top: 17rem;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+
+.link-card {
+    display: flex;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 10px 20px rgb(34, 34, 34);
+    border: 2px solid rgb(92, 92, 92); 
+}
+.link-card:hover {
+    background: rgba(36, 36, 36, 0.5);
+}
+.link-icon {
+    color: white;
+    background-image: linear-gradient(to top, rgb(71, 71, 71),rgb(36, 36, 36));
+    padding: 0.5rem;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-icon2 {
+    color: white;
+    background-image: linear-gradient(to top, rgb(123, 113, 255),rgb(3, 70, 255));
+    padding: 0.5rem;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-icon3 {
+    color: white;
+    background-image: linear-gradient(to top, rgb(255, 73, 73),rgb(190, 57, 57));
+    padding: 0.5rem;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-icon4 {
+    color: white;
+    background-image: linear-gradient(to top, rgb(199, 1, 1),rgb(255, 0, 0));
+    padding: 0.5rem;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-action {
+    color: white;
+    cursor: pointer;
+}
+
+.link-text {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Gluten', sans-serif;
+    text-shadow: 2px 3px 2px black;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20rem;
+    color: white;
+    opacity: 0.7;
+}
+
+.toast-container {
+    background-color: white;
+    color: black;
+    top: 0;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    animation: muncul 300ms ease-in-out;
+}
+
+#toast {
+    width: max-content;
+    position: fixed;
+    top: 0;
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.toast-gone {
+    animation: hilang 2s ease-in-out 2s;
+}
+
+@keyframes hilang {
+    from {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0;
+
+    }
+}
+    
